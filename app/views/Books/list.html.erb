@@ -7,11 +7,13 @@
 <table border='1' style='width:300px'>
 <tr>
 <th>Book Title</th>
+<th>Rating</th>
 <th>Price</th>
 </tr>
 <tr>
 <% Book.read.each do |book| %>
 <td><%= book["title"] %></td>
+<td><%= Review.where("book_id" => book.id).average("rating") %></td>
 <td><%= book.price %></td>
 </tr>
 <% end %>
