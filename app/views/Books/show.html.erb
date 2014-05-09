@@ -3,7 +3,7 @@
 
 <h2><%= book.title %></h2>
 <p><b>Price:</b> $<%= book.price %></p>
-<p><b>Average rating:</b> <%= Review.read("book_id" => book.id).average("rating") %></p>
+<p><b>Average rating:</b> <%= book.rating %></p>
 
 <p><b>Reviews</b></p>
 

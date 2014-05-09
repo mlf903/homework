@@ -13,7 +13,7 @@
 <tr>
 <% Book.read.each do |book| %>
 <td><a href="/books/<%= book.id %>"><%= book["title"] %></a></td>
-<td><%= Review.where("book_id" => book.id).average("rating") %></td>
+<td><%= book.rating %></td>
 <td><%= book.price %></td>
 </tr>
 <% end %>

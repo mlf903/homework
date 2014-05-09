@@ -1,0 +1,5 @@
+<h1>Editor's Pick</h1>
+
+<% book = Book.order("rating desc").first %>
+
+<h2><a href="/books/<%= book.id %>"><%= book.title %></a></h2>
