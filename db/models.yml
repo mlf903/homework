@@ -2,13 +2,13 @@ Book:
   - title: string
   - author_id: integer
   - price: integer
-  - rating: integer
+  - rating: float
 
 Author:
   - name: string
 
 Review:
-  - rating: integer
+  - rating: float
   - comment: text
   - book_id: integer
 
